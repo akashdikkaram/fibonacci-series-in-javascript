@@ -8,22 +8,15 @@
 	<h3>fibonacci series in console</h3>
 
 	<script type="text/javascript">
-		var a = 0;
-		console.log(a);
-		var b = 1;
-		console.log(b);
+	function fibonacci(num){
+		if(num<=1) return 1;
+		return fibonacci(num - 1) + fibonacci(num-2);
+  
 
-		var c;
+}
 
-		for(i=0;i<3;i++)
-		{
-			c= a+b;
-			console.log(c);
-			a =b+c;
-			console.log(a);
-			b=c+a;
-			console.log(b);
-		}
+alert(fibonacci(4));
+
 
 
 	</script>
